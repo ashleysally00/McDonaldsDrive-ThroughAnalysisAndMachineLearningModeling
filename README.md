@@ -1,4 +1,4 @@
-# McDonald's Data Project: Heat Map, Bar Graph, and Drive-Through Analysis
+# McDonald's Data Project: Heat Map, Bar Graph, Drive-Through Analysis, and Machine Learning Modeling
 
 ## 1. Dataset Acquisition and Setup
 - I downloaded the dataset containing information about McDonald's locations from an online source (the exact website is not specified).
@@ -20,9 +20,18 @@
 - I created a bar graph to visualize the distribution of McDonald's locations across different regions or states.
 - I used **Pandas and Matplotlib** for this task. I aggregated the number of McDonald's locations by region or state using pandas’ grouping and aggregation functions, then plotted this data using Matplotlib’s bar plot functions.
 
-## 5. HTML Integration
+## 5. Machine Learning Analysis
+- In a separate Jupyter notebook, I applied machine learning techniques using the same McDonald's dataset.
+- I explored various machine learning models to analyze and predict patterns in the data. This included tasks such as:
+  - **Data Preprocessing**: Cleaning and preparing the data for machine learning models.
+  - **Feature Selection**: Identifying relevant features for model training.
+  - **Model Training**: Training models to predict aspects such as the presence of drive-throughs, location density, or other relevant metrics.
+  - **Model Evaluation**: Assessing the performance of the models using metrics such as accuracy, precision, recall, and F1-score.
+
+## 6. HTML Integration
 - I added the generated map, heat map, and bar graph to an `index.html` file.
 - I ensured that the titles of the maps and graphs were properly aligned above the corresponding visualizations to maintain a clean layout.
 
-## 6. Deployment
+## 7. Deployment
 - I deployed the HTML file displaying the map on a webpage through Netlify, making the interactive map accessible online. This webpage focused on McDonald's locations.
+
