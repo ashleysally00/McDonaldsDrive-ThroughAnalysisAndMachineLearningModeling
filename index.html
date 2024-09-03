@@ -127,11 +127,20 @@
             </div>
             <div class="project-summary">
                 <h4>Project Summary</h4>
-                <p>Dataset Acquisition and Setup: I downloaded the dataset containing information about McDonald's locations from <a href="https://data-m8.com/products/list-of-all-mcdonalds-locations-in-the-us-csv-and-json">a free List of All McDonald's Locations in the US (CSV and JSON)</a>. It's no longer free, I don't know why. I imported this dataset into Visual Studio Code (VSC) within a Jupyter notebook for analysis. The dataset includes various columns such as store_brand, store_id, city, state_code, open_hours_drive_through.</p>
-                <p>Data Filtering and Preparation: I filtered the dataset to focus on specific aspects of the McDonald's locations. This included identifying stores with drive-throughs open at 3 am and categorizing locations by state. I used Python libraries such as pandas for data manipulation and filtering.</p>
-                <p>Visualization Creation: Using libraries like Folium and Matplotlib, I created various visualizations. These included a heat map of McDonald's locations in California, a marker map showing individual restaurant locations, and a bar graph displaying the number of McDonald's by state.</p>
-                <p>Drive-Through Analysis: I conducted an analysis of drive-through operations, particularly focusing on locations open at 3 am. This involved filtering the data and creating a specific map for Florida to showcase these 24-hour drive-through locations.</p>
-                <p>Machine Learning Modeling: Although not visible in the current visualizations, I also performed machine learning modeling on the dataset. This likely involved predictive analytics or clustering to gain insights from the McDonald's location data.</p>
+                <p><em>Dataset Acquisition and Setup</em>: I downloaded the dataset containing information about McDonald's locations from <a href="https://data-m8.com/products/list-of-all-mcdonalds-locations-in-the-us-csv-and-json">a free List of All McDonald's Locations in the US (CSV and JSON)</a>. It's no longer free, I don't know why. I imported this dataset into Visual Studio Code (VSC) within a Jupyter notebook for analysis. The dataset includes various columns such as store_brand, store_id, city, state_code, open_hours_drive_through.</p>
+                <p><em>Data Filtering and Preparation</em>: I filtered the dataset to focus on specific aspects of the McDonald's locations. This included identifying stores with drive-throughs open at 3 am and categorizing locations by state. I used Python libraries such as pandas for data manipulation and filtering.</p>
+                <p><em>Visualization Creation</em>: Using libraries like Folium and Matplotlib, I created various visualizations. These included a heat map of McDonald's locations in California, a marker map showing individual restaurant locations, and a bar graph displaying the number of McDonald's by state.</p>
+                <p><em>Drive-Through Analysis</em>: I conducted an analysis of drive-through operations, particularly focusing on locations open at 3 am. This involved filtering the data and creating a specific map for Florida to showcase these 24-hour drive-through locations.</p>
+                <p><em>Machine Learning Modeling</em>: I imported libraries from scikit-learn 
+                  for model training and evaluation. In preparing the data, I used 
+               latitude and longitude as the features (X) for the model. Then I created a binary target variable drive_through based on whether drive-through hours 
+                  were present (1 if present, 0 if not). I then split the dataset into training and testing sets 
+                  using the train_test_split function. I initialized the Random Forest classifier 
+                  with 100 trees (n_estimators=100) and a fixed random state to ensure consistent results. Then, I trained the model using the training data (X_train and y_train) with the fit method. This step involves the model
+                  learning the patterns in the data. used the trained model to predict the target
+                  variable for the testing set (X_test) and evaluated its performance using accuracy and 
+                  classification metrics. I tested it to see if a drive through would be present. It was. 
+              </p>
             </div>
         </div>
 
