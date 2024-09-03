@@ -1,4 +1,4 @@
-# McDonald's Data Project Summary
+# McDonald's Data Project: Heat Map, Bar Graph, and Drive-Through Analysis
 
 ## 1. Dataset Acquisition and Setup
 - I downloaded the dataset containing information about McDonald's locations from an online source (the exact website is not specified).
