@@ -1,52 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mcdonalds Maps</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    
-      <div class="map-container">
-      <div class="map-item"></div>
-      <h4>Florida McDonalds With Drive-Throughs Open at 3 am</h4>
-      <iframe
-        src="FloridaMcdonaldsMap.html"
+    <title>McDonald's Maps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            font-weight: bold;
+            font-style: normal;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        h1 {
+            font-size: 1.4rem;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        .byline {
+            font-size: 1rem;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+        .top-section {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        .florida-map {
+            margin-bottom: 20px;
+        }
+        .florida-map iframe {
+            height: 400px;
+            width: 100%;
+        }
+        .project-summary {
+            border: 1px solid black;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        .maps-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .map-container {
+            width: 100%;
+            margin-bottom: 40px;
+            max-width: 350px;
+        }
+        .map-container h4 {
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+        .map-container iframe, .map-container img {
+            width: 100%;
+            height: 450px;
+            border: none;
+            object-fit: contain; /* Changed from cover to contain */
+        }
+        p {
+            font-size: 0.74rem;
+        }
+        h3, h4 {
+            font-size: 0.85rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (min-width: 768px) {
+            .top-section {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .florida-map {
+                flex: 1;
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+            .project-summary {
+                flex: 1;
+                margin-top: 24px;
+            }
+            .maps-section {
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .map-container {
+                width: 30%;
+                margin: 0 0 40px;
+            }
+            .map-container:first-child {
+                width: 40%; /* Make the bar graph container wider */
+                max-width: none;
+            }
+            .map-container:not(:first-child) {
+                width: 28%; /* Make the other two containers slightly narrower */
+            }
+        }
+
+        /* Hide alt text if image fails to load */
+        .map-container img:not([src]):not([srcset]),
+        .map-container img[src=""],
+        .map-container img[srcset=""] {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>McDonald's Data Project: Heat Map, Bar Graph, Drive-Through Analysis, and Machine Learning Modeling</h1>
+        <p class="byline">by Ashley Rice</p>
         
-        style="border: none"
-      ></iframe>
-    </div>
-
- <div class="map-container">
-    <div class="map-item"></div>
-      <h4>McDonalds Locations by State</h4>
-      <img
-        src="McdLocationsByState.png"
-        alt="McDonalds locations by State"
-       
-      />
-    </div>
-
-    
- <div class="map-container">
-    <div class="map-item"><div>
-      <h4>California McDonalds Restaurant Locations Heatmap</h4>
-      <iframe
-        src="california_mcdonalds_heatmap copy.html"
-         style="border: none"
-      ></iframe>
-    </div>
-
- <div class="map-container">
-<div class="map-item"></div>
- <h4>California McDonalds Restaurant Marker Map</h4>
-    <iframe
-      src="california_mcdonalds_markers copy.html"
-
-      style="border: none"
-    ></iframe>
+        <div class="top-section">
+            <div class="florida-map">
+                <h4>Florida McDonald's With Drive-Throughs Open at 3 am</h4>
+                <iframe src="FloridaMcdonaldsMap.html"></iframe>
+            </div>
+            <div class="project-summary">
+                <h4>Project Summary</h4>
+                <p>Dataset Acquisition and Setup: I downloaded the dataset containing information about McDonald's locations from <a href="https://data-m8.com/products/list-of-all-mcdonalds-locations-in-the-us-csv-and-json">a free List of All McDonald's Locations in the US (CSV and JSON)</a>. It's no longer free, I don't know why. I imported this dataset into Visual Studio Code (VSC) within a Jupyter notebook for analysis. The dataset includes various columns such as store_brand, store_id, city, state_code, open_hours_drive_through.</p>
+                <p>Data Filtering and Preparation: I filtered the dataset to focus on specific aspects of the McDonald's locations. This included identifying stores with drive-throughs open at 3 am and categorizing locations by state. I used Python libraries such as pandas for data manipulation and filtering.</p>
+                <p>Visualization Creation: Using libraries like Folium and Matplotlib, I created various visualizations. These included a heat map of McDonald's locations in California, a marker map showing individual restaurant locations, and a bar graph displaying the number of McDonald's by state.</p>
+                <p>Drive-Through Analysis: I conducted an analysis of drive-through operations, particularly focusing on locations open at 3 am. This involved filtering the data and creating a specific map for Florida to showcase these 24-hour drive-through locations.</p>
+                <p>Machine Learning Modeling: Although not visible in the current visualizations, I also performed machine learning modeling on the dataset. This likely involved predictive analytics or clustering to gain insights from the McDonald's location data.</p>
+            </div>
         </div>
- </div>
-  </body>
+
+        <div class="maps-section">
+            <div class="map-container">
+                <h4>Bar Graph: McDonald's Locations by State</h4>
+                <img src="./McdLocationsByState.png" alt="Bar graph showing McDonald's restaurant count for each US state" onerror="this.style.display='none'"/>
+            </div>
+            <div class="map-container">
+                <h4>California McDonald's Restaurant Locations Heatmap</h4>
+                <iframe src="california_mcdonalds_heatmap copy.html"></iframe>
+            </div>
+            <div class="map-container">
+                <h4>California McDonald's Restaurant Marker Map</h4>
+                <iframe src="california_mcdonalds_markers copy.html"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // This script will hide the alt text if the image fails to load
+        document.addEventListener('DOMContentLoaded', function() {
+            var img = document.querySelector('.map-container img');
+            img.onerror = function() {
+                this.style.display = 'none';
+                var errorMsg = document.createElement('p');
+                errorMsg.textContent = 'Image failed to load. Please check the file path.';
+                this.parentNode.insertBefore(errorMsg, this);
+            };
+        });
+    </script>
+</body>
 </html>
