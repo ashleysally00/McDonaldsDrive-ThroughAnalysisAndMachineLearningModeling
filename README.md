@@ -3,7 +3,7 @@
 [see the maps here](https://66d78831d6f7dfd6e93d89aa--coruscating-cobbler-7c06de.netlify.app/)
 
 ## 1. Dataset Acquisition and Setup
-I downloaded [a free list of all McDonald's locations-related data in the United States](https://data-m8.com/products/list-of-all-mcdonalds-locations-in-the-us-csv-and-json), which is no longer free (I don't know why).
+I downloaded [this free list of all McDonald's locations-related data in the United States](https://data-m8.com/products/list-of-all-mcdonalds-locations-in-the-us-csv-and-json), which is no longer free (I don't know why).
 
 I imported this dataset into Visual Studio Code (VSC) within a Jupyter notebook for analysis. The dataset includes various columns such as `store_brand`, `store_id`, `city`, `state_code`, `open_hours_drive_through`, etc.
 
