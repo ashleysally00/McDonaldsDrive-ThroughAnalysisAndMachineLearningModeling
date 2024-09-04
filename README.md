@@ -1,8 +1,7 @@
 # McDonald's Data Project: Heat Map, Bar Graph, Drive-Through Analysis, and Machine Learning Modeling
 
 ## 1. Dataset Acquisition and Setup
-I downloaded the dataset containing information about McDonald's locations from [a free list of all McDonald's locations in the United States](https://data-m8.com/products/list-of-all-mcdonalds-locations-in-the-us-csv-and-json)
-which is no longer free (I don't know why).
+I downloaded the dataset containing information about McDonald's locations from [a free list of all McDonald's locations in the United States](https://data-m8.com/products/list-of-all-mcdonalds-locations-in-the-us-csv-and-json), which is no longer free (I don't know why).
 
 I imported this dataset into Visual Studio Code (VSC) within a Jupyter notebook for analysis. The dataset includes various columns such as `store_brand`, `store_id`, `city`, `state_code`, `open_hours_drive_through`, etc.
 
