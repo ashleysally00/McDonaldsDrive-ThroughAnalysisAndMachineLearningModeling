@@ -1,5 +1,7 @@
 # McDonald's Data Project: Heat Map, Bar Graph, Drive-Through Analysis, and Machine Learning Modeling
 
+[see the maps here](https://66d78831d6f7dfd6e93d89aa--coruscating-cobbler-7c06de.netlify.app/)
+
 ## 1. Dataset Acquisition and Setup
 I downloaded the dataset containing information about McDonald's locations from [a free list of all McDonald's locations in the United States](https://data-m8.com/products/list-of-all-mcdonalds-locations-in-the-us-csv-and-json), which is no longer free (I don't know why).
 
