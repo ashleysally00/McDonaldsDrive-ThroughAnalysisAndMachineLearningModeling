@@ -31,7 +31,7 @@ I used Pandas and Matplotlib for this task. I aggregated the number of McDonald'
 ### Machine Learning Modeling
 I imported libraries from scikit-learn for model training and evaluation. In preparing the data, I used latitude and longitude as the features (X) for the model. Then I created a binary target variable `drive_through` based on whether drive-through hours were present (1 if present, 0 if not). I then split the dataset into training and testing sets using the `train_test_split` function.
 
-I initialized the Random Forest classifier with 100 trees (`n_estimators=100`) because it is a common number people have used for testing, and a fixed random state to ensure consistent results. Then, I trained the model using the training data (`X_train` and `y_train`) with the `fit` method. This step involves the model learning the patterns in the data. I used the trained model to predict the target variable for the testing set (`X_test`) and evaluated its performance using accuracy and classification metrics. I tested it to see if a drive-through would be present. It was.
+I initialized the Random Forest classifier with 100 trees (`n_estimators=100`) because it is a common number people have used for testing, and a fixed random state to ensure consistent results. Then, I trained the model using the training data (`X_train` and `y_train`) with the `fit` method. This step involved the model learning the patterns in the data. I used the trained model to predict the target variable for the testing set (`X_test`) and evaluated its performance using accuracy and classification metrics. I tested it to see if a drive-through would be present. It was.
 
 ## 6. HTML Integration
 I added the generated map, heat map, and bar graph to an `index.html` file.  
