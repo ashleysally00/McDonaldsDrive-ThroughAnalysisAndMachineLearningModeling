@@ -20,7 +20,7 @@ I further filtered the data to identify drive-throughs open at 3 AM by using Con
 
 ## 3. Creating the Heat Map
 I used Folium to create a heat map to visualize the density of McDonald's locations in California.  
-I applied Geospatial Techniques to generate the heat map. This involved converting the filtered data into latitude and longitude coordinates and using Folium’s HeatMap function to display areas with higher concentrations of McDonald's locations.
+I applied Geospatial Techniques to generate the heat map. This involved converting the filtered data into latitude and longitude coordinates and using Folium’s HeatMap function to display areas with higher concentrations of McDonald's locations. It meant using Leaflet for JavaScript under the hood so I could display my interactive map directly in my web application. Folium is a libray that is good for converting interactive maps you are making with Python into HTML so you can display them on your webpages. 
 
 ## 4. Creating the Bar Graph
 I created a bar graph to visualize the distribution of McDonald's locations across different regions or states.  
