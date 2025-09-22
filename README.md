@@ -1,6 +1,7 @@
 # McDonald's Data Project: Heat Map, Bar Graph, Drive-Through Analysis, and Machine Learning Modeling
 
-![GitHub closed issues](https://img.shields.io/github/issues-closed/ashleysally00/McDonaldsDrive-ThroughAnalysisAndMachineLearningModeling)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/ashleysally00/McDonaldsDrive-ThroughAnalysisAndMachineLearningModeling)](https://github.com/ashleysally00/McDonaldsDrive-ThroughAnalysisAndMachineLearningModeling/issues?q=is%3Aissue+is%3Aclosed)
+
 
 [see the maps here](https://66d78831d6f7dfd6e93d89aa--coruscating-cobbler-7c06de.netlify.app/)
 
